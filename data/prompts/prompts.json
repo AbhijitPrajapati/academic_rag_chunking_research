@@ -168,5 +168,47 @@
             "We are a union but we function a bit like a feminist cooperative",
             "The day laborers in the sample do in fact have centralized locations where they get together to look for work, facilitating communication and coordination. They enforce price floors, ice out bad employers and share skills and contacts in order to strengthen their abilities to get jobs and make money."
         ]
+    },
+    {
+        "id": "p4q0",
+        "question": "Among the Visegrád Group, which country has the lowest proportion of foreign nationals in its total workforce?",
+        "answer": "Hungary (2.6%)",
+        "evidence": [
+            "Within the Visegrád Group, Hungary receives the lowest proportion of third-country workers (2.6% of the workers comprising foreign nationals), compared with Slovakia (3.8%), Poland (6.4%), and the Czech Republic (17%)",
+            "Despite these increases, Hungary continues to employ a relatively small proportion of foreign workers. In 2024, foreign nationals accounted for approximately 2.6% of em-ployment in Hungary, compared to 3.8% in Slovakia, 6.4% in Poland, and 17% in the Czech Republic",
+        ]
+    },
+    {
+        "id": "p4q1",
+        "question": "What research design was used to analyze the interaction between legal norms and structural economic changes as they relate to labour migration?",
+        "answer": "Sociolegal methodology",
+        "evidence": [
+            "The research design of this study is based on a socio-legal methodology, which involves the use of doctrinal research techniques in combination with findings from the social sciences, policy analysis and qualitative review of secondary social science literature in order to contextualise legal developments within their wider economic context."
+        ]
+    },
+    {
+        "id": "p4q2",
+        "question": "What was the outcome of the sudden introduction of visa requirements for Colombian nationals in Poland in August 2024?",
+        "answer": "It abruplty disrupted migration.",
+        "evidence": [
+            "The sudden introduction of a visa requirement in August 2024, without a transitional period, abruptly disrupted this migration channel."
+        ]
+    },
+    {
+        "id": "p4q3",
+        "question": "Define the policy–rhetoric gap as it applies to Poland and Hungary.",
+        "answer": "Its the measurable divergence between restrictive political narratives and substantive regulatory measures",
+        "evidence": [
+            "Migration policies increasingly highlight a growing gap between rhetoric and policy (the policy–rhetoric gap). This gap is operationally defined as a measurable divergence between publicly articulated governmental narratives on migration and the substantive regulatory measures adopted to facilitate the admission and employment of third-country workers."
+        ]
+    },
+    {
+        "id": "p4q4",
+        "question": "How does selective openness explain the functional convergence of Polish and Hungarian migration models?",
+        "answer": "Labor migration is instrumentally managed to address shortages while maintaining narratives of control",
+        "evidence": [
+            "migration governance increasingly prioritises economically instrumental, temporary labour mobility while maintaining politically communicable control narratives",
+            "The findings suggest that Poland and Hungary should be understood as variants of a selective openness model of migration governance: regimes that combine politically communicable narratives of control with functionally necessary labour market incorporation."
+        ]
     }
 ]
