@@ -42,7 +42,7 @@
     },
     {
         "id": "p1q0",
-        "question": "What was the total size of the comment corpus analyzed for the Discourse Analysis part of the study?",
+        "question": "What was the total size of the comment corpus analyzed for the Discourse Analysis part of the study on online comments?",
         "answer": "457 comments",
         "evidence": [
             "In the final stage of coding, 457 comments were included in the discourse analysis distributed across five main categories: inflammatory discourse, moral criticism, epistemic criticism, sarcastic moral formulations, and sarcastic epistemic formulations."
@@ -58,7 +58,7 @@
     },
     {
         "id": "p1q2",
-        "question": "What were the five main categories used to group the 457 online comments included in the discourse analysis?",
+        "question": "What were the five main categories used to group the 457 online comments included in the discourse analysis of the study on online comments?",
         "answer": "inflammatory discourse, moral criticism, epistemic criticism, sarcastic moral formulations, and sarcastic epistemic formulations",
         "evidence": [
             "In the final stage of coding, 457 comments were included in the discourse analysis distributed across five main categories: inflammatory discourse, moral criticism, epistemic criticism, sarcastic moral formulations, and sarcastic epistemic formulations."
@@ -109,7 +109,7 @@
     },
     {
         "id": "p2q3",
-        "question": "How do the authors balance the child's right to stay with their family of origin with the right to be protected from harm when concluding that not all children are eligible for reunification?",
+        "question": "In the study on family reunification, how is the child's right to stay with their family of origin balanced with the right to be protected from harm when concluding that not all children are eligible for reunification?",
         "answer": "Permanency planning takes precedence when there is an unnacceptable risk asscociated with the family of origin.",
         "evidence": [
             "Only removing a child from their parents’ care if there is an unacceptable risk of harm."
@@ -142,7 +142,7 @@
     },
     {
         "id": "p3q2",
-        "question": "How does the experience of 'economic precarity' differ between female domestic workers and male day laborers in terms of wage levels versus work frequency?",
+        "question": "In Barcelona, how does the experience of 'economic precarity' differ between female domestic workers and male day laborers in terms of wage levels versus work frequency?",
         "answer": "Domestic workers suffer primarily from low salary levels, while day laborers suffer from infrequent wages.",
         "evidence": [
             "Wage theft was an incredibly common experience for the day laborers, but was less of an issue for the domestic workers",
@@ -180,7 +180,7 @@
     },
     {
         "id": "p4q1",
-        "question": "What research design was used to analyze the interaction between legal norms and structural economic changes as they relate to labour migration?",
+        "question": "What research design was used to analyze the interaction between legal norms and structural economic changes as they relate to labour migration in Poland and Hungary?",
         "answer": "Sociolegal methodology",
         "evidence": [
             "The research design of this study is based on a socio-legal methodology, which involves the use of doctrinal research techniques in combination with findings from the social sciences, policy analysis and qualitative review of secondary social science literature in order to contextualise legal developments within their wider economic context."
@@ -196,7 +196,7 @@
     },
     {
         "id": "p4q3",
-        "question": "Define the policy–rhetoric gap as it applies to Poland and Hungary.",
+        "question": "Define the policy–rhetoric gap as it applies to labor migration in Poland and Hungary.",
         "answer": "Its the measurable divergence between restrictive political narratives and substantive regulatory measures",
         "evidence": [
             "Migration policies increasingly highlight a growing gap between rhetoric and policy (the policy–rhetoric gap). This gap is operationally defined as a measurable divergence between publicly articulated governmental narratives on migration and the substantive regulatory measures adopted to facilitate the admission and employment of third-country workers."
@@ -311,7 +311,7 @@
     },
     {
         "id": "p7q1",
-        "question": "Which lens is used to examine the ways White norms and assumptions are embedded in child protection institutions?",
+        "question": "Which lens is used to examine the ways White norms and assumptions are embedded in child protection institutions in Australia?",
         "answer": "Critical Whiteness Theory",
         "evidence": [
             "This analytic approach uses a constructivist epistemology and is informed by Critical Whiteness Theory (CWT) as a lens to examine assumptions which shape child protection practice.",
@@ -320,7 +320,7 @@
     },
     {
         "id": "p7q2",
-        "question": "What did participants identify as the true historical origin of physical discipline (the stick) in African communities?",
+        "question": "What was identified by African community members as the true historical origin of physical discipline (the stick)?",
         "answer": "It was a myth, introduced by white missionaries during colonial rule to tame Africans, rather than being a cultural tradition",
         "evidence": [
             "Participants also challenged assumptions about physical discipline being a cultural norm in African communities. They explained that the use of the stick had been introduced by white missionaries during colonial rule. One participant explained that missionaries used a stick to ‘tame us wild Africans’ and they were keen to state that this was not a longstanding cultural practice."
@@ -336,7 +336,7 @@
     },
     {
         "id": "p7q4",
-        "question": "Explain the 'relational and cultural misalignment' described as a source of risk in child protection.",
+        "question": "Explain the 'relational and cultural misalignment' described as a source of risk in child protection in Australia.",
         "answer": "Western systems prioritize procedural compliance and risk management while South Sudanese communities view safety as a collective responsibility rooted in community connection, creating misalignment",
         "evidence": [
             "In South Sudan, keeping children safe was a collective responsibility shaped by war, danger and the need to act quickly or risk a fatality.",
