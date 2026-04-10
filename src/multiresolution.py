@@ -1,10 +1,12 @@
 from nltk import sent_tokenize
 from util.embedding import embedding_model, chunk_sentences_semantically
-from util.vector_store import add_chunks
+from util.vector_store import add_chunks, get_or_init_method
 from util.load_papers import load_papers
 
 
 def main():
+    collection = get_or_init_method("multiresolution")
+
     for data, fn in load_papers():
         chunks = []
         sections = []
@@ -14,7 +16,7 @@ def main():
                 chunks.extend(c)
                 sections.extend([section["section"]] * len(c))
         embeddings = embedding_model.encode(chunks)
-        add_chunks("multiresolution", fn, data["title"], chunks, embeddings, sections)
+        add_chunks(collection, fn, data["title"], chunks, embeddings, sections)
 
 
 if __name__ == "__main__":
