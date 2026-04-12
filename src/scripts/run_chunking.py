@@ -8,14 +8,14 @@ from src.chunking import (
     sentence_based_chunking,
 )
 from src.embedding import embedding_model
+from .constants import SIMILARITY_THRESHOLDS
+
 
 client = PersistentClient("chunks")
 
-SIMILARITY_THRESHOLDS = [0.5, 0.6, 0.65]
-
 
 def load_papers():
-    for i in tqdm(range(10)):
+    for i in range(10):
         fn = f"p{i}"
         with open(f"data/processed/{fn}.json") as f:
             data = json.load(f)
@@ -45,7 +45,7 @@ def main():
     fixed = client.get_or_create_collection("fixed_length")
     sentence_based = client.get_or_create_collection("sentence_based")
     semantic = client.get_or_create_collection("semantic")
-    for data, fn in load_papers():
+    for data, fn in tqdm(load_papers()):
         store_chunks(fixed, fn, data["title"], *fixed_length_chunking(data["content"]))
         store_chunks(
             sentence_based, fn, data["title"], *sentence_based_chunking(data["content"])
