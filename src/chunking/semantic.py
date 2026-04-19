@@ -1,5 +1,5 @@
 from nltk import sent_tokenize
-from src.embedding import embedding_model
+from src.nlp import embedding_model
 from src.constants import SIMILARITY_THRESHOLD
 
 
@@ -8,26 +8,29 @@ def semantic_chunking(sections):
     section_names = []
     for section in sections:
         sentences = sent_tokenize(section["text"])
-        embeddings = embedding_model.encode(sentences)
+        if len(sentences) < 4:
+            chunks.append(section["text"])
+            section_names.append(section["section"])
+            continue
+        windows = [" ".join(sentences[i : i + 3]) for i in range(len(sentences) - 2)]
+        embeddings = embedding_model.encode(windows)
         similarities = embedding_model.similarity_pairwise(
             embeddings[:-1], embeddings[1:]
         )
 
-        dip_idx = [
-            i
-            for i in range(len(similarities))
-            if similarities[i] < SIMILARITY_THRESHOLD
-        ]
-
         c = []
-        current = [sentences[0]]
-        for i, s in enumerate(sentences[1:]):
-            if i in dip_idx:
+        current = [windows[0]]
+        skip_iter = False
+        for i, s in enumerate(sentences[3:]):
+            if skip_iter:
+                skip_iter = False
+                continue
+            if similarities[i] < SIMILARITY_THRESHOLD:
                 c.append(" ".join(current))
-                ovr = min(1, len(current))
-                current = current[-ovr:] + [sentences[i + 1]]
-            else:
-                current.append(s)
+                current = [sentences[i + 2]]
+                skip_iter = True
+                continue
+            current.append(s)
         if current:
             c.append(" ".join(current))
         chunks.extend(c)

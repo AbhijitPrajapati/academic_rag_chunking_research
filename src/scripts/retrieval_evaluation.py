@@ -23,14 +23,11 @@ def main():
 
     evaluator = Evaluator(targets, EVAL_K, EVAL_RATIO_THRESHOLD, EVAL_LENGTH_THRESHOLD)
 
-    results = []
-    for n_chunks in EVAL_N_CHUNKS:
-        res = {"n_chunks": n_chunks}
-        for method in ["fixed_length", "sentence_based", "semantic"]:
-            collection = client.get_collection(method)
-            chunks = retrieve_chunks(queries, n_chunks, collection)
-            res[method] = evaluator.get_metrics(chunks)  # type: ignore
-        results.append(res)
+    results = {}
+    for method in ["fixed_length", "sentence_based", "semantic"]:
+        collection = client.get_collection(method)
+        chunks = retrieve_chunks(queries, EVAL_N_CHUNKS, collection)
+        results[method] = evaluator.get_metrics(chunks)  # type: ignore
 
     with open("results/results.json", "w") as f:
         json.dump(results, f, indent=4)

@@ -7,7 +7,7 @@ from src.chunking import (
     semantic_chunking,
     sentence_based_chunking,
 )
-from src.embedding import embedding_model
+from src.nlp import embedding_model
 
 
 client = PersistentClient("chunks")

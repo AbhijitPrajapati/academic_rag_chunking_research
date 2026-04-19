@@ -1,4 +1,4 @@
-from nltk.tokenize import word_tokenize
+from src.nlp import tokenizer
 
 
 def get_bigrams(texts_list: list[list[str]]):
@@ -6,7 +6,7 @@ def get_bigrams(texts_list: list[list[str]]):
     for texts in texts_list:
         intermediate = []
         for text in texts:
-            tokens = [t for t in word_tokenize(text.lower().strip()) if t.isalnum()]
+            tokens = tokenizer(text, add_special_tokens=False)["input_ids"]
             intermediate.append(set(zip(tokens[:-1], tokens[1:])))
         out.append(intermediate)
     return out

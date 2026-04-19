@@ -1,5 +1,5 @@
 from chromadb import Collection
-from src.embedding import embedding_model
+from src.nlp import embedding_model
 
 
 def retrieve_chunks(prompts, n_chunks, collection: Collection):
