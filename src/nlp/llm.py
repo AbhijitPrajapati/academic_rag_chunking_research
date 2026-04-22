@@ -23,13 +23,13 @@ llm_pipeline = pipeline(
     task="text-generation",
     model=model,
     tokenizer=tokenizer,
-    batch_size=4,
-    # num_workers=4,
 )
 
 
 def generate(prompts):
     output = llm_pipeline(
-        [[{"role": "user", "content": p}] for p in prompts], return_full_text=False
+        [[{"role": "user", "content": p}] for p in prompts],
+        return_full_text=False,
+        batch_size=2,
     )
-    return [o["generated_text"] for o in output[0]]
+    return [o[0]["generated_text"] for o in output]
