@@ -4,8 +4,6 @@ from src.nlp import generate
 from src.vector_store import retrieve_chunks
 from src.constants import EVAL_N_CHUNKS
 
-import time
-
 
 def build_prompt(question, context):
     return f"""
@@ -43,7 +41,7 @@ def main():
         responses = generate(prompts)
         responses_dict[m] = [{"id": i, "response": r} for i, r in zip(ids, responses)]
     with open("results/llm_responses.json", "w") as f:
-        json.dump(responses_dict, f)
+        json.dump(responses_dict, f, indent=4)
 
 
 if __name__ == "__main__":
