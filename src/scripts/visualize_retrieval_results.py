@@ -27,7 +27,6 @@ def main():
     method_labels = ["Fixed Length", "Sentence Based", "Semantic"]
 
     fig_mrp, ax_mrp = plt.subplots(figsize=(6, 6))
-    mrp = [m["mean_reciprocal_rank"] for m in data]
 
     ax_mrp.bar(method_labels, mrp, color="steelblue", alpha=0.7)
     ax_mrp.set_title("Mean Reciprocal Rank")

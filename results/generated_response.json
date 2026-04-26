@@ -1,0 +1,26 @@
+{
+    "points": {
+        "fixed_length": 0.82,
+        "sentence_based": 1.28,
+        "semantic": 0.9
+    },
+    "win_rate": {
+        "fixed_length": 0.2,
+        "semantic": 0.28,
+        "sentence_based": 0.52
+    },
+    "pairwise": {
+        "fixed_length": {
+            "sentence_based": 0.34,
+            "semantic": 0.48
+        },
+        "sentence_based": {
+            "fixed_length": 0.66,
+            "semantic": 0.62
+        },
+        "semantic": {
+            "fixed_length": 0.52,
+            "sentence_based": 0.38
+        }
+    }
+}

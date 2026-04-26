@@ -63,8 +63,8 @@ def main():
                 "shuffle_key": [r[0] for r in responses],
             }
         )
-    with open("results/response_evaluation.json", "w") as f:
-        json.dump(evaluation_responses, f)
+    with open("results/response_evaluation_old.json", "w") as f:
+        json.dump(evaluation_responses, f, indent=4)
 
 
 if __name__ == "__main__":
